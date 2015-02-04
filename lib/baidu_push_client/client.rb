@@ -20,7 +20,7 @@ module BaiduPushClient
 
   }
 
-  DEFAULT_IOS_MSG = {
+  LONG_DEFAULT_IOS_MSG = {
     description: "hello world",
     notification_basic_style: 7,
     open_type: 0,
@@ -40,6 +40,11 @@ module BaiduPushClient
     key2: "value2"
   }.to_json
 
+  DEFAULT_IOS_MSG = {
+    aps: {
+     alert:"Message From Baidu Push"
+    }
+  }.to_json
   DEPLOY_STATUS = {
     development: 1,
     production: 2
@@ -153,7 +158,7 @@ module BaiduPushClient
     def rest_client
       Faraday.new(url: "https://"+server_host) do |faraday|
         #faraday.request :url_encoded
-        faraday.response :logger
+        #faraday.response :logger
         faraday.adapter Faraday.default_adapter
       end
     end
