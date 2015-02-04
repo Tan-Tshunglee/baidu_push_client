@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'baidu_push/version'
+require 'baidu_push_client/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "baidu_push"
-  spec.version       = BaiduPush::VERSION
+  spec.name          = "baidu_push_client"
+  spec.version       = BaiduPushClient::VERSION
   spec.authors       = ["David Ruan"]
   spec.email         = ["ruanwz@gmail.com"]
   spec.summary       = %q{Baidu Push SDK}

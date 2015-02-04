@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'vcr_helper'
 require 'timecop'
-describe BaiduPush::Client do
+describe BaiduPushClient::Client do
   before do
 
     Timecop.freeze(Time.local(2015,2,4,14,40))
@@ -15,7 +15,7 @@ describe BaiduPush::Client do
     ak:           '9k14jrtoe3HjUnOBcapGIlN8',
     sk:           'F3iDv4MMm2ZZsXVDvlMVxdueiBikjU3p'
   }
-  subject {BaiduPush::Client.new(options)}
+  subject {BaiduPushClient::Client.new(options)}
   it "accept parameters" do
     expect {subject}.to_not raise_error
   end

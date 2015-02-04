@@ -1,7 +1,7 @@
 require 'virtus'
 require 'faraday'
 require 'json'
-module BaiduPush
+module BaiduPushClient
   DEVICE_TYPE = {
     browser: 1,
     pc: 2,

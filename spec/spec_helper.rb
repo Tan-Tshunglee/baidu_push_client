@@ -1,1 +1,1 @@
-require 'baidu_push'
+require 'baidu_push_client'
