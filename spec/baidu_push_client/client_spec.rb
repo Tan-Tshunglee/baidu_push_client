@@ -4,7 +4,7 @@ require 'timecop'
 describe BaiduPushClient::Client do
   before do
 
-    Timecop.freeze(Time.local(2015,2,4,14,40))
+    Timecop.freeze(Time.utc(2015,2,4,6,40))
   end
   after do
     Timecop.return
