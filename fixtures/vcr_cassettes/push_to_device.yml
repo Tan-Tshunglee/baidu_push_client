@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://channel.api.duapp.com/rest/2.0/channel/channel?apikey=9k14jrtoe3HjUnOBcapGIlN8&channel_id=5329701810242571197&deploy_status=1&device_type=4&expires=1423035600&message_type=1&messages=%7B%22aps%22:%7B%22alert%22:%22Message%20From%20Baidu%20Push%22%7D%7D&method=push_msg&msg_keys=1423032000&push_type=1&sign=30ead8777c75e8bd7ec02ab0a8dd2704&timestamp=1423032000&user_id=1139768951174354557
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 04 Feb 2015 06:42:33 GMT
+      Server:
+      - BWS/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request_id":642052544,"response_params":{"success_amount":1,"msgids":[]}}'
+    http_version: 
+  recorded_at: Wed, 04 Feb 2015 06:40:00 GMT
+recorded_with: VCR 2.9.3

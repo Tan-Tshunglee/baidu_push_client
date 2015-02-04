@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://channel.api.duapp.com/rest/2.0/channel/channel?apikey=9k14jrtoe3HjUnOBcapGIlN8&channel_id=5329701810242571197&deploy_status=1&device_type=4&expires=1423035600&messages=%7B%22aps%22:%7B%22alert%22:%22Message%20From%20Baidu%20Push%22%7D%7D&method=query_bindlist&msg_keys=1423032000&push_type=&sign=eb53dc842b8850fe654e0c95cd4b8997&timestamp=1423032000&user_id=1139768951174354557
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 04 Feb 2015 06:42:35 GMT
+      Server:
+      - BWS/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request_id":642032147,"response_params":{"total_num":"1","amount":1,"binds":[{"online_status":"off","bind_status":0,"channel_id":"5329701810242571197","user_id":1139768951174354557,"device_id":"e33e9f49ad616f2d1d782256478f8b574d2f4bea","device_type":4,"device_name":"Belinkr\u2019s
+        iPad","bind_name":"4751932","bind_time":1422974450,"info":""}]}}'
+    http_version: 
+  recorded_at: Wed, 04 Feb 2015 06:40:00 GMT
+recorded_with: VCR 2.9.3
