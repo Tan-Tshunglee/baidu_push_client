@@ -1,6 +1,6 @@
 # BaiduPushClient
 
-TODO: Write a gem description
+Baidu Push SDK
 
 ## Installation
 
@@ -19,9 +19,21 @@ Or install it yourself as:
     $ gem install baidu_push_client
 
 ## Usage
-
 Read spec for usage and fixtures for request/response examples
 
+```ruby
+
+options = {
+  server_host:  'channel.api.duapp.com',
+  common_path:  '/rest/2.0/channel',
+  ak:           '9k14jrtoe3HjUnOBcapGIlN8',
+  sk:           'F3iDv4MMm2ZZsXVDvlMVxdueiBikjU3p'
+}
+
+client = BaiduPushClient::Client.new(options)
+
+client.push_all
+```
 
 ## Contributing
 

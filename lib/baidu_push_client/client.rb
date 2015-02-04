@@ -40,19 +40,14 @@ module BaiduPushClient
     key2: "value2"
   }.to_json
 
-  DEFAULT_IOS_MSG = {
-    aps: {
-      alert:"Message From Baidu Push"
-      }
-  }.to_json
   DEPLOY_STATUS = {
     development: 1,
     production: 2
   }
   class Client
     include Virtus.model
-    attribute :server_host, String
-    attribute :common_path, String
+    attribute :server_host, String, default: 'channel.api.duapp.com'
+    attribute :common_path, String, default: '/rest/2.0/channel'
     attribute :channel_id, String
     attribute :user_id, String
     attribute :ak, String
