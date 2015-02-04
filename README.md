@@ -30,9 +30,16 @@ options = {
   sk:           'F3iDv4MMm2ZZsXVDvlMVxdueiBikjU3p'
 }
 
+messages = {
+  aps: {
+    alert:"Message From Baidu Push",
+    sound:"",
+    badge:0
+    },
+}
 client = BaiduPushClient::Client.new(options)
 
-client.push_all
+client.push_all messages: messages.to_json
 ```
 
 ## Contributing
