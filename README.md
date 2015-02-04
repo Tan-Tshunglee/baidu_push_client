@@ -20,7 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Read spec for usage and fixtures for request/response examples
+
 
 ## Contributing
 
