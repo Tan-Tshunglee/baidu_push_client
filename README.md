@@ -1,4 +1,6 @@
 # BaiduPushClient
+[![Build
+Status](https://travis-ci.org/ruanwz/baidu_push_client.svg?branch=master)](https://travis-ci.org/ruanwz/baidu_push_client)
 
 Baidu Push SDK
 
